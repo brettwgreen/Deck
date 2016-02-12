@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.Logic.Card.cs
-// Last Modified: 02/12/2016 8:39 AM
+// Last Modified: 02/12/2016 8:49 AM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -25,7 +25,7 @@ namespace Deck.Logic
                 foreach (var rank in RankOrder)
                 {
                     cards[i] = new Card() {Rank = rank, Suit = suit};
-                    //i++;
+                    i++;
                 }
             }
             return cards;

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck", "Deck\Deck.csproj", "{0EDF2E97-2B1A-4EAC-B31E-0806377FF283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck.Tests", "Deck.Tests\Deck.Tests.csproj", "{99B89D83-12A4-4AED-867C-247E5D7A5717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck.Logic", "Deck.Logic\Deck.Logic.csproj", "{ABCB7A21-A73C-4117-ACAF-053A21523957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EDF2E97-2B1A-4EAC-B31E-0806377FF283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDF2E97-2B1A-4EAC-B31E-0806377FF283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDF2E97-2B1A-4EAC-B31E-0806377FF283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDF2E97-2B1A-4EAC-B31E-0806377FF283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B89D83-12A4-4AED-867C-247E5D7A5717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B89D83-12A4-4AED-867C-247E5D7A5717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B89D83-12A4-4AED-867C-247E5D7A5717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B89D83-12A4-4AED-867C-247E5D7A5717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCB7A21-A73C-4117-ACAF-053A21523957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCB7A21-A73C-4117-ACAF-053A21523957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCB7A21-A73C-4117-ACAF-053A21523957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCB7A21-A73C-4117-ACAF-053A21523957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = e468e988-0eaa-4383-a048-dc919e01d641
+	EndGlobalSection
+EndGlobal

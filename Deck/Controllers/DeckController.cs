@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.DeckController.cs
-// Last Modified: 02/12/2016 11:49 AM
+// Last Modified: 02/12/2016 12:29 PM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -11,6 +11,11 @@ namespace Deck.Controllers
 
     public class DeckController : ApiController
     {
-        public IDeck Deck { get; set; }
+        [HttpGet]
+        [Route("deck/cards")]
+        public Card[] GetCards()
+        {
+            return Deck.GetCards();
+        }
     }
 }

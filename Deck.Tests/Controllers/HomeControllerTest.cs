@@ -1,14 +1,19 @@
-﻿using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Deck;
-using Deck.Controllers;
+﻿// *************************************************
+// Deck.Tests.HomeControllerTest.cs
+// Last Modified: 02/12/2016 8:54 AM
+// Modified By: Green, Brett (greenb1)
+// *************************************************
 
 namespace Deck.Tests.Controllers
 {
-    [TestClass]
+    using System.Web.Mvc;
+    using Deck.Controllers;
+    using NUnit.Framework;
+
+    [TestFixture]
     public class HomeControllerTest
     {
-        [TestMethod]
+        [Test]
         public void Index()
         {
             // Arrange

@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.WebApiConfig.cs
-// Last Modified: 02/12/2016 11:54 AM
+// Last Modified: 02/12/2016 11:57 AM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -34,7 +34,7 @@ namespace Deck
 
             var builder = new ContainerBuilder();
             builder.RegisterType<Deck>().As<IDeck>();
-            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly()).PropertiesAutowired();
             builder.RegisterWebApiFilterProvider(config);
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);

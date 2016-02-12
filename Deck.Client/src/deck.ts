@@ -1,18 +1,36 @@
 import {Card} from './card';
+import {inject} from "aurelia-framework";
+import {HttpClient} from 'aurelia-fetch-client';
+import 'fetch';
 
+@inject(HttpClient)
 export class Deck {
-    cards: Card[];
-    display: string = 'deck!';
+    cards: any[] = [];
+    message: string;
 
     deckSize() {
         return this.cards.length;
     }
 
-    constructor() {
-        this.cards = new Array(2);
-        this.cards[0] = new Card("Diamond", "Queen");
-        this.cards[1] = new Card("Diamond", "King");
-        console.log('Constructor fired');
+    constructor(private http: HttpClient) {
+        http.configure(config => {
+            config
+                .withBaseUrl('http://localhost:56892/')
+                .withDefaults({
+                        mode: 'no-cors',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }
+                );
+        });
+
+    }
+
+    activate() {
+        this.http.fetch('deck/cards')
+            .then(response => response.json())
+            .catch(e => { console.log(e); });
     }
 
     shuffle() {

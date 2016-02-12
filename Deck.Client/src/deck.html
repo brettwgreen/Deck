@@ -1,6 +1,8 @@
 <template>
+    <div>${message}</div>
     <div repeat.for="card of cards">
-        <div>${card.rank} of ${card.suit.pip}s<br/>
+        <div>
+            ${card.rank} of ${card.suit.pip}s<br/>
         </div>
     </div>
 </template>

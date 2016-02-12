@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.Logic.Deck.cs
-// Last Modified: 02/12/2016 11:12 AM
+// Last Modified: 02/12/2016 11:46 AM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -15,6 +15,11 @@ namespace Deck.Logic
         public Deck()
         {
             Cards = Card.GetCards();
+        }
+
+        public Deck(Card[] cards)
+        {
+            Cards = cards;
         }
 
         public void Shuffle()

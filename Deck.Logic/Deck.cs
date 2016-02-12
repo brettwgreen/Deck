@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.Logic.Deck.cs
-// Last Modified: 02/12/2016 8:56 AM
+// Last Modified: 02/12/2016 11:12 AM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -8,7 +8,7 @@ namespace Deck.Logic
 {
     using System;
 
-    public class Deck
+    public class Deck : IDeck
     {
         public Card[] Cards { get; set; }
 

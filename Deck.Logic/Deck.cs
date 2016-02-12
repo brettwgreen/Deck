@@ -1,6 +1,6 @@
 ﻿// *************************************************
 // Deck.Logic.Deck.cs
-// Last Modified: 02/12/2016 8:37 AM
+// Last Modified: 02/12/2016 8:56 AM
 // Modified By: Green, Brett (greenb1)
 // *************************************************
 
@@ -27,7 +27,7 @@ namespace Deck.Logic
                 var c1 = Cards[i];
                 Cards[i] = Cards[swap];
                 Cards[swap] = c1;
-                Console.WriteLine(string.Format("Swapped '{0}' with '{1}'", Cards[swap], Cards[i]));
+                //Console.WriteLine(string.Format("Swapped '{0}' with '{1}'", Cards[swap], Cards[i]));
             }
         }
     }
